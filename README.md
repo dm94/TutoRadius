@@ -1,12 +1,3 @@
-d888888P            dP                     oo          dP     888888ba              888888ba             .d888b. dP   dP 
-   88               88                                 88     88    `8b             88    `8b            Y8' `88 88   88 
-   88    dP    dP d8888P .d8888b. 88d888b. dP .d8888b. 88    a88aaaa8P' dP    dP    88     88 88d8b.d8b. `8bad88 88aaa88 
-   88    88    88   88   88'  `88 88'  `88 88 88'  `88 88     88   `8b. 88    88    88     88 88'`88'`88     `88      88 
-   88    88.  .88   88   88.  .88 88       88 88.  .88 88     88    .88 88.  .88    88    .8P 88  88  88 d.  .88      88 
-   dP    `88888P'   dP   `88888P' dP       dP `88888P8 dP     88888888P `8888P88    8888888P  dP  dP  dP `8888P       dP 
-                                                                             .88                                         
-                                                                         d8888P                                          
-																		 
 Mostraremos la instalación en un sistema operativo Linux Debian 7 a través de paquetes. A continuación se detallan los pasos que se van a seguir:
 
 1. Instalar FreeRADIUS.
@@ -15,6 +6,7 @@ Mostraremos la instalación en un sistema operativo Linux Debian 7 a través de 
 4. Instalar dependencias daloRADIUS.
 5. Instalar y configurar daloRADIUS.
 6. Test de funcionamiento.
+
 
 --------------------------------------------------------------------------------------------------------------------
 1.El primer paso es instalar FreeRADIUS desde paquetes. Para ello lanzamos el siguiente comando como root desde una terminal y confirmamos la instalación
@@ -36,14 +28,13 @@ Para activar el soporte SQL editaremos el fichero radius.conf y descomentaremos 
 --------------------------------------------------------------------------------------------------------------------
 3. El siguiente paso es descargar daloRADIUS desde mi repositorio. Para esta operación ejecutamos los siguientes comandos como root:
 	
-	cd /usr/local/src
-	
-	wget https://codeload.github.com/dm94/TutoRadius/zip/master
+		cd /usr/local/src
+		wget https://codeload.github.com/dm94/TutoRadius/zip/master
 	
 --------------------------------------------------------------------------------------------------------------------
 4. Vamos a instalar el servicio Web, el de base de datos y un paquete para gestión de imágenes. Como root ejecutamos el siguiente comando:
 	
-	apt-get install apache2 php5 php5-gd php-pear php-db libapache2-mod-php5 php-mail php5-mysql mysql-server
+		apt-get install apache2 php5 php5-gd php-pear php-db libapache2-mod-php5 php-mail php5-mysql mysql-server
 	
 --------------------------------------------------------------------------------------------------------------------
 5. Una vez instaladas las dependencias vamos a descomprimir la aplicación en el directorio de nuestro servicio Web y crearemos la base de datos con las tablas pertinentes. Como root ejecutamos los siguientes comandos
